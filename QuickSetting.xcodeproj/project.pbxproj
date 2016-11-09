@@ -7,17 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9221068D1DD1DF8D00C3ED67 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9221068C1DD1DF8D00C3ED67 /* FirstViewController.m */; };
+		9233B4A81DD1B8E40048E2ED /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F80D051DD082480042AE6F /* NotificationCenter.framework */; };
+		9233B4AC1DD1B8E40048E2ED /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9233B4AB1DD1B8E40048E2ED /* TodayViewController.m */; };
+		9233B4AF1DD1B8E40048E2ED /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9233B4AD1DD1B8E40048E2ED /* MainInterface.storyboard */; };
+		9233B4B31DD1B8E40048E2ED /* QuickSettingTaday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9233B4A71DD1B8E40048E2ED /* QuickSettingTaday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9233B4C41DD1C53E0048E2ED /* 电池.png in Resources */ = {isa = PBXBuildFile; fileRef = 9233B4C01DD1C53E0048E2ED /* 电池.png */; };
+		9233B4C61DD1C53E0048E2ED /* 定位.png in Resources */ = {isa = PBXBuildFile; fileRef = 9233B4C21DD1C53E0048E2ED /* 定位.png */; };
+		9233B4CA1DD1CD250048E2ED /* 无线网.png in Resources */ = {isa = PBXBuildFile; fileRef = 9233B4C81DD1CD250048E2ED /* 无线网.png */; };
+		9233B4CB1DD1CD250048E2ED /* 蜂窝数据.png in Resources */ = {isa = PBXBuildFile; fileRef = 9233B4C91DD1CD250048E2ED /* 蜂窝数据.png */; };
+		9240A7F71DD300D4003435E1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F80CE41DD052480042AE6F /* MobileCoreServices.framework */; };
+		9240A8161DD30BDF003435E1 /* QueickSettingTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9240A8151DD30BDF003435E1 /* QueickSettingTool.a */; };
+		9240A8171DD30BDF003435E1 /* QueickSettingTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9240A8151DD30BDF003435E1 /* QueickSettingTool.a */; };
+		92B5AE4E1DD1D89E00D7D016 /* DazFlake.png in Resources */ = {isa = PBXBuildFile; fileRef = 92B5AE4D1DD1D89E00D7D016 /* DazFlake.png */; };
 		92F80CB21DD04F4F0042AE6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F80CB11DD04F4F0042AE6F /* main.m */; };
 		92F80CB51DD04F4F0042AE6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F80CB41DD04F4F0042AE6F /* AppDelegate.m */; };
 		92F80CB81DD04F4F0042AE6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F80CB71DD04F4F0042AE6F /* ViewController.m */; };
 		92F80CBB1DD04F4F0042AE6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F80CB91DD04F4F0042AE6F /* Main.storyboard */; };
-		92F80CBD1DD04F4F0042AE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F80CBC1DD04F4F0042AE6F /* Assets.xcassets */; };
 		92F80CC01DD04F4F0042AE6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F80CBE1DD04F4F0042AE6F /* LaunchScreen.storyboard */; };
 		92F80CCB1DD04F4F0042AE6F /* QuickSettingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F80CCA1DD04F4F0042AE6F /* QuickSettingTests.m */; };
 		92F80CD61DD04F4F0042AE6F /* QuickSettingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F80CD51DD04F4F0042AE6F /* QuickSettingUITests.m */; };
+		92F80CE51DD052480042AE6F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F80CE41DD052480042AE6F /* MobileCoreServices.framework */; };
+		92F80CE71DD0524F0042AE6F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F80CE61DD0524F0042AE6F /* CoreLocation.framework */; };
+		92F80CE91DD059CF0042AE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F80CBC1DD04F4F0042AE6F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9233B4B11DD1B8E40048E2ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92F80CA51DD04F4F0042AE6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9233B4A61DD1B8E40048E2ED;
+			remoteInfo = QuickSettingTaday;
+		};
 		92F80CC71DD04F4F0042AE6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 92F80CA51DD04F4F0042AE6F /* Project object */;
@@ -34,7 +56,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		92F80D151DD082480042AE6F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9233B4B31DD1B8E40048E2ED /* QuickSettingTaday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9221068B1DD1DF8D00C3ED67 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		9221068C1DD1DF8D00C3ED67 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		9233B4A71DD1B8E40048E2ED /* QuickSettingTaday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickSettingTaday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9233B4AA1DD1B8E40048E2ED /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		9233B4AB1DD1B8E40048E2ED /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		9233B4AE1DD1B8E40048E2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9233B4B01DD1B8E40048E2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9233B4C01DD1C53E0048E2ED /* 电池.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电池.png"; sourceTree = "<group>"; };
+		9233B4C21DD1C53E0048E2ED /* 定位.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位.png"; sourceTree = "<group>"; };
+		9233B4C81DD1CD250048E2ED /* 无线网.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "无线网.png"; sourceTree = "<group>"; };
+		9233B4C91DD1CD250048E2ED /* 蜂窝数据.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蜂窝数据.png"; sourceTree = "<group>"; };
+		9240A8111DD30A9D003435E1 /* QueickSettingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueickSettingTool.h; sourceTree = "<group>"; };
+		9240A8151DD30BDF003435E1 /* QueickSettingTool.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = QueickSettingTool.a; sourceTree = "<group>"; };
+		92B5AE4D1DD1D89E00D7D016 /* DazFlake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazFlake.png; sourceTree = "<group>"; };
 		92F80CAD1DD04F4F0042AE6F /* QuickSetting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSetting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F80CB11DD04F4F0042AE6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92F80CB31DD04F4F0042AE6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,13 +101,31 @@
 		92F80CD11DD04F4F0042AE6F /* QuickSettingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickSettingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F80CD51DD04F4F0042AE6F /* QuickSettingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSettingUITests.m; sourceTree = "<group>"; };
 		92F80CD71DD04F4F0042AE6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F80CE41DD052480042AE6F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		92F80CE61DD0524F0042AE6F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		92F80CE81DD054790042AE6F /* QuickHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickHeader.h; sourceTree = "<group>"; };
+		92F80D051DD082480042AE6F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		92F80D171DD0B6E20042AE6F /* QuickSetting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickSetting.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9233B4A41DD1B8E40048E2ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9240A7F71DD300D4003435E1 /* MobileCoreServices.framework in Frameworks */,
+				9240A8171DD30BDF003435E1 /* QueickSettingTool.a in Frameworks */,
+				9233B4A81DD1B8E40048E2ED /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92F80CAA1DD04F4F0042AE6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F80CE71DD0524F0042AE6F /* CoreLocation.framework in Frameworks */,
+				9240A8161DD30BDF003435E1 /* QueickSettingTool.a in Frameworks */,
+				92F80CE51DD052480042AE6F /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +146,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9233B4A91DD1B8E40048E2ED /* QuickSettingTaday */ = {
+			isa = PBXGroup;
+			children = (
+				9233B4AA1DD1B8E40048E2ED /* TodayViewController.h */,
+				9233B4AB1DD1B8E40048E2ED /* TodayViewController.m */,
+				9233B4AD1DD1B8E40048E2ED /* MainInterface.storyboard */,
+				9233B4B71DD1BD310048E2ED /* 图层-3.imageset */,
+				9233B4B01DD1B8E40048E2ED /* Info.plist */,
+			);
+			path = QuickSettingTaday;
+			sourceTree = "<group>";
+		};
+		9233B4B71DD1BD310048E2ED /* 图层-3.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				92B5AE4D1DD1D89E00D7D016 /* DazFlake.png */,
+				9233B4C81DD1CD250048E2ED /* 无线网.png */,
+				9233B4C91DD1CD250048E2ED /* 蜂窝数据.png */,
+				9233B4C01DD1C53E0048E2ED /* 电池.png */,
+				9233B4C21DD1C53E0048E2ED /* 定位.png */,
+			);
+			path = "图层-3.imageset";
+			sourceTree = "<group>";
+		};
+		9240A8181DD30C3A003435E1 /* QueickTool */ = {
+			isa = PBXGroup;
+			children = (
+				92F80D171DD0B6E20042AE6F /* QuickSetting.entitlements */,
+				92F80CE81DD054790042AE6F /* QuickHeader.h */,
+				9240A8111DD30A9D003435E1 /* QueickSettingTool.h */,
+				9240A8151DD30BDF003435E1 /* QueickSettingTool.a */,
+			);
+			name = QueickTool;
+			sourceTree = "<group>";
+		};
 		92F80CA41DD04F4F0042AE6F = {
 			isa = PBXGroup;
 			children = (
 				92F80CAF1DD04F4F0042AE6F /* QuickSetting */,
 				92F80CC91DD04F4F0042AE6F /* QuickSettingTests */,
 				92F80CD41DD04F4F0042AE6F /* QuickSettingUITests */,
+				9233B4A91DD1B8E40048E2ED /* QuickSettingTaday */,
 				92F80CAE1DD04F4F0042AE6F /* Products */,
+				92F80CE31DD052480042AE6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +199,7 @@
 				92F80CAD1DD04F4F0042AE6F /* QuickSetting.app */,
 				92F80CC61DD04F4F0042AE6F /* QuickSettingTests.xctest */,
 				92F80CD11DD04F4F0042AE6F /* QuickSettingUITests.xctest */,
+				9233B4A71DD1B8E40048E2ED /* QuickSettingTaday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,10 +207,13 @@
 		92F80CAF1DD04F4F0042AE6F /* QuickSetting */ = {
 			isa = PBXGroup;
 			children = (
+				9240A8181DD30C3A003435E1 /* QueickTool */,
 				92F80CB31DD04F4F0042AE6F /* AppDelegate.h */,
 				92F80CB41DD04F4F0042AE6F /* AppDelegate.m */,
 				92F80CB61DD04F4F0042AE6F /* ViewController.h */,
 				92F80CB71DD04F4F0042AE6F /* ViewController.m */,
+				9221068B1DD1DF8D00C3ED67 /* FirstViewController.h */,
+				9221068C1DD1DF8D00C3ED67 /* FirstViewController.m */,
 				92F80CB91DD04F4F0042AE6F /* Main.storyboard */,
 				92F80CBC1DD04F4F0042AE6F /* Assets.xcassets */,
 				92F80CBE1DD04F4F0042AE6F /* LaunchScreen.storyboard */,
@@ -140,9 +249,36 @@
 			path = QuickSettingUITests;
 			sourceTree = "<group>";
 		};
+		92F80CE31DD052480042AE6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92F80CE61DD0524F0042AE6F /* CoreLocation.framework */,
+				92F80CE41DD052480042AE6F /* MobileCoreServices.framework */,
+				92F80D051DD082480042AE6F /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9233B4A61DD1B8E40048E2ED /* QuickSettingTaday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9233B4B41DD1B8E40048E2ED /* Build configuration list for PBXNativeTarget "QuickSettingTaday" */;
+			buildPhases = (
+				9233B4A31DD1B8E40048E2ED /* Sources */,
+				9233B4A41DD1B8E40048E2ED /* Frameworks */,
+				9233B4A51DD1B8E40048E2ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickSettingTaday;
+			productName = QuickSettingTaday;
+			productReference = 9233B4A71DD1B8E40048E2ED /* QuickSettingTaday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		92F80CAC1DD04F4F0042AE6F /* QuickSetting */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92F80CDA1DD04F4F0042AE6F /* Build configuration list for PBXNativeTarget "QuickSetting" */;
@@ -150,10 +286,12 @@
 				92F80CA91DD04F4F0042AE6F /* Sources */,
 				92F80CAA1DD04F4F0042AE6F /* Frameworks */,
 				92F80CAB1DD04F4F0042AE6F /* Resources */,
+				92F80D151DD082480042AE6F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9233B4B21DD1B8E40048E2ED /* PBXTargetDependency */,
 			);
 			name = QuickSetting;
 			productName = QuickSetting;
@@ -205,10 +343,20 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "小谩的Mac";
 				TargetAttributes = {
+					9233B4A61DD1B8E40048E2ED = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = D563M8VDK4;
+						ProvisioningStyle = Automatic;
+					};
 					92F80CAC1DD04F4F0042AE6F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = D563M8VDK4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					92F80CC51DD04F4F0042AE6F = {
 						CreatedOnToolsVersion = 8.0;
@@ -240,17 +388,31 @@
 				92F80CAC1DD04F4F0042AE6F /* QuickSetting */,
 				92F80CC51DD04F4F0042AE6F /* QuickSettingTests */,
 				92F80CD01DD04F4F0042AE6F /* QuickSettingUITests */,
+				9233B4A61DD1B8E40048E2ED /* QuickSettingTaday */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9233B4A51DD1B8E40048E2ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9233B4CB1DD1CD250048E2ED /* 蜂窝数据.png in Resources */,
+				9233B4C61DD1C53E0048E2ED /* 定位.png in Resources */,
+				9233B4AF1DD1B8E40048E2ED /* MainInterface.storyboard in Resources */,
+				9233B4C41DD1C53E0048E2ED /* 电池.png in Resources */,
+				9233B4CA1DD1CD250048E2ED /* 无线网.png in Resources */,
+				92B5AE4E1DD1D89E00D7D016 /* DazFlake.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92F80CAB1DD04F4F0042AE6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				92F80CC01DD04F4F0042AE6F /* LaunchScreen.storyboard in Resources */,
-				92F80CBD1DD04F4F0042AE6F /* Assets.xcassets in Resources */,
+				92F80CE91DD059CF0042AE6F /* Assets.xcassets in Resources */,
 				92F80CBB1DD04F4F0042AE6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,11 +434,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9233B4A31DD1B8E40048E2ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9233B4AC1DD1B8E40048E2ED /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92F80CA91DD04F4F0042AE6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				92F80CB81DD04F4F0042AE6F /* ViewController.m in Sources */,
+				9221068D1DD1DF8D00C3ED67 /* FirstViewController.m in Sources */,
 				92F80CB51DD04F4F0042AE6F /* AppDelegate.m in Sources */,
 				92F80CB21DD04F4F0042AE6F /* main.m in Sources */,
 			);
@@ -301,6 +472,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9233B4B21DD1B8E40048E2ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9233B4A61DD1B8E40048E2ED /* QuickSettingTaday */;
+			targetProxy = 9233B4B11DD1B8E40048E2ED /* PBXContainerItemProxy */;
+		};
 		92F80CC81DD04F4F0042AE6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 92F80CAC1DD04F4F0042AE6F /* QuickSetting */;
@@ -314,6 +490,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9233B4AD1DD1B8E40048E2ED /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9233B4AE1DD1B8E40048E2ED /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		92F80CB91DD04F4F0042AE6F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -333,6 +517,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9233B4B51DD1B8E40048E2ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D563M8VDK4;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				INFOPLIST_FILE = QuickSettingTaday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuickSetting",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = QuickSetting.QuickSettingTaday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9233B4B61DD1B8E40048E2ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D563M8VDK4;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				INFOPLIST_FILE = QuickSettingTaday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuickSetting",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = QuickSetting.QuickSettingTaday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		92F80CD81DD04F4F0042AE6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -427,11 +651,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuickSetting/QuickSetting.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = D563M8VDK4;
 				INFOPLIST_FILE = QuickSetting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-21486783.QuickSetting";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuickSetting",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = QuickSetting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -439,11 +671,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuickSetting/QuickSetting.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = D563M8VDK4;
 				INFOPLIST_FILE = QuickSetting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-21486783.QuickSetting";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuickSetting",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = QuickSetting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -500,6 +740,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9233B4B41DD1B8E40048E2ED /* Build configuration list for PBXNativeTarget "QuickSettingTaday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9233B4B51DD1B8E40048E2ED /* Debug */,
+				9233B4B61DD1B8E40048E2ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		92F80CA81DD04F4F0042AE6F /* Build configuration list for PBXProject "QuickSetting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -516,6 +765,7 @@
 				92F80CDC1DD04F4F0042AE6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92F80CDD1DD04F4F0042AE6F /* Build configuration list for PBXNativeTarget "QuickSettingTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +774,7 @@
 				92F80CDF1DD04F4F0042AE6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92F80CE01DD04F4F0042AE6F /* Build configuration list for PBXNativeTarget "QuickSettingUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +783,7 @@
 				92F80CE21DD04F4F0042AE6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

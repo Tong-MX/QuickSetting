@@ -4,14 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>QuichSettingExtention.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>QuickSetting.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>QuickSettingTaday.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>9233B4A61DD1B8E40048E2ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>92F80CAC1DD04F4F0042AE6F</key>
 		<dict>
 			<key>primary</key>
@@ -23,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>92F80CD01DD04F4F0042AE6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>92F80D031DD082480042AE6F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

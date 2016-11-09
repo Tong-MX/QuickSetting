@@ -1,16 +1,14 @@
 //
-//  ViewController.h
+//  FirstViewController.h
 //  QuickSetting
 //
-//  Created by 明桐的Mac on 16/11/7.
+//  Created by 明桐的Mac on 16/11/8.
 //  Copyright © 2016年 小谩的Mac. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "QuickHeader.h"
 
-@interface ViewController : UIViewController
+@interface FirstViewController : UIViewController
+@property (nonatomic, assign) NSInteger tag;
 @property (nonatomic, assign) BOOL show3DTouch;
-
 @end
-

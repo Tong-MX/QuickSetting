@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIAlertViewDelegate> {
+    NSString *recodeTitle;
+}
 
 @end
 
@@ -16,14 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [QueickSettingTool configSnowEmitterLayerWithdefuetView:self.view];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    if (!self.show3DTouch) {
+        FirstViewController *controller = [[FirstViewController alloc] init];
+        controller.tag = 4;
+        controller.show3DTouch = self.show3DTouch;
+        [self.navigationController pushViewController:controller animated:YES];
+    }
 }
-
 
 @end

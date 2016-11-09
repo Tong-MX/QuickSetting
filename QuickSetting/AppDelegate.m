@@ -7,34 +7,50 @@
 //
 
 #import "AppDelegate.h"
+//3Dtouch
 
+
+#import <MobileCoreServices/MobileCoreServices.h>
 @interface AppDelegate ()
-
+@property (nonatomic,strong) ViewController *mainbarVC;
+@property (nonatomic,strong) UINavigationController *nav;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //此app只使用有3dtouch的手机否者会引起崩溃
+    
+    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    _window.backgroundColor = [UIColor whiteColor];
+    
+    _mainbarVC  =  [[ViewController alloc] init];
+    _nav = [[UINavigationController alloc] initWithRootViewController:_mainbarVC];
+    _nav.navigationBar.translucent = NO;
+    _window.rootViewController = _nav;
+    [_window makeKeyAndVisible];
+
+    [self show3DtouchMethod];
     return YES;
 }
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
 }
 
++ (AppDelegate *)appDelegate {
+    return (AppDelegate *)[[UIApplication sharedApplication] delegate];
+}
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+
 }
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    [_mainbarVC viewWillAppear:YES];
 }
 
 
@@ -47,5 +63,57 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark 自定义3Dtouch方法与图片
+
+- (void)show3DtouchMethod{
+    
+    UIApplicationShortcutIcon *iconCircle = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeHome];
+    UIApplicationShortcutItem *shortItemCircle = [[UIApplicationShortcutItem alloc] initWithType:OnceDTouch localizedTitle:WirelessNetwork localizedSubtitle:nil icon:iconCircle userInfo:nil];
+    
+    UIApplicationShortcutIcon *iconAnswer = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeDate];
+    UIApplicationShortcutItem * shortItemAnswer = [[UIApplicationShortcutItem alloc] initWithType:TwoDTouch localizedTitle:Honeycomb localizedSubtitle:nil icon:iconAnswer userInfo:nil];
+    
+    UIApplicationShortcutIcon *iconDailyKnowledge = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeMail];
+    UIApplicationShortcutItem * shortItemDailyKnowledge = [[UIApplicationShortcutItem alloc] initWithType:ThreeDTouch localizedTitle:Battery localizedSubtitle:nil icon:iconDailyKnowledge userInfo:nil];
+    
+    UIApplicationShortcutIcon *iconWeight = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeShuffle];
+    UIApplicationShortcutItem * shortItemWeight = [[UIApplicationShortcutItem alloc] initWithType:FourTouchWeight localizedTitle:LocationService localizedSubtitle:nil icon:iconWeight userInfo:nil];
+    
+    NSArray *shortItems = [[NSArray alloc] initWithObjects:shortItemWeight, shortItemDailyKnowledge, shortItemAnswer, shortItemCircle, nil];
+    
+    if (shortItems.count > 0) {
+        [[UIApplication sharedApplication] setShortcutItems:shortItems];
+    }
+}
+
+#pragma mark 3Dtouch代理方法
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
+    _mainbarVC.show3DTouch = YES;
+    [self iSShow3DTouchMethod:shortcutItem];
+}
+
+#pragma mark 显示3Dtouch方法
+
+- (void)iSShow3DTouchMethod:(UIApplicationShortcutItem *)shortcutItem{
+    //判断先前我们设置的唯一标识
+    if([shortcutItem.type isEqualToString:OnceDTouch]){
+        FirstViewController *controller = [[FirstViewController alloc] init];
+        controller.tag = 0;
+        [self.nav pushViewController:controller animated:YES];
+    }else if ([shortcutItem.type isEqualToString:TwoDTouch]){
+        FirstViewController *controller = [[FirstViewController alloc] init];
+        controller.tag = 1;
+        [self.nav pushViewController:controller animated:YES];
+    }else if ([shortcutItem.type isEqualToString:ThreeDTouch]){
+        FirstViewController *controller = [[FirstViewController alloc] init];
+        controller.tag = 2;
+        [self.nav pushViewController:controller animated:YES];
+    }else if ([shortcutItem.type isEqualToString:FourTouchWeight]){
+        FirstViewController *controller = [[FirstViewController alloc] init];
+        controller.tag = 3;
+        [self.nav pushViewController:controller animated:YES];
+    }
+}
 
 @end
