@@ -11,6 +11,22 @@
 #import <Foundation/Foundation.h>
 
 @interface QueickSettingTool : NSObject
-+ (void)initPrepareJumpWithPrefsStr:(NSString*)prefsStr;//跳转
-+ (void)configSnowEmitterLayerWithdefuetView:(UIView*)defuetView;//雪花效果
+/*
+@prarm 跳转的方法
+@prarm prefsStr 传入要跳转的字符串
+ */
++ (void)initPrepareJumpWithPrefsStr:(NSString*)prefsStr;
+
+/*
+@prarm 雪花方法
+@prarm defuetView 传入要显示的界面
+ */
++ (void)configSnowEmitterLayerWithdefuetView:(UIView*)defuetView;
+
+/*
+ @prarm 雪花方法
+ @prarm effectImageView 传入要显示的图片
+ @prarm baseView        如果有传入要最底层的界面没有传入nil
+ */
++ (void)initInTerPolationMotionEffectWithEffectImageView:(UIImageView*)effectImageView BaseView:(UIView*)baseView;
 @end

@@ -19,10 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.preferredContentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 100);
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 120)];
-    imageView.image = [UIImage imageNamed:@"未标题-1"];//自定义 750 与200像素图片
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(-20, 0, [UIScreen mainScreen].bounds.size.width + 10, 120)];
+    imageView.image = [UIImage imageNamed:@"未标题-3"];//自定义 750 与200像素图片
     imageView.contentMode = UIViewContentModeScaleAspectFill;  
-//    [self.view addSubview:imageView];
+    [self.view addSubview:imageView];
+    [QueickSettingTool initInTerPolationMotionEffectWithEffectImageView:imageView BaseView:nil];
     [QueickSettingTool configSnowEmitterLayerWithdefuetView:self.view];
     NSArray *imageArr = @[@"无线网",@"蜂窝数据",@"电池",@"定位"];
     for (int i = 0; i < 4; i++) {
