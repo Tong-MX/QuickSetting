@@ -20,7 +20,7 @@
     [super viewDidLoad];
     self.preferredContentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 100);
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(-20, 0, [UIScreen mainScreen].bounds.size.width + 10, 120)];
-    imageView.image = [UIImage imageNamed:@"未标题-3"];//自定义 750 与200像素图片
+    imageView.image = [UIImage imageNamed:@"未标题-1"];//自定义 750 与200像素图片
     imageView.contentMode = UIViewContentModeScaleAspectFill;  
     [self.view addSubview:imageView];
     [QueickSettingTool initInTerPolationMotionEffectWithEffectImageView:imageView BaseView:nil];
@@ -28,7 +28,7 @@
     NSArray *imageArr = @[@"无线网",@"蜂窝数据",@"电池",@"定位"];
     for (int i = 0; i < 4; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.frame = CGRectMake((15 + (i * 90)), 15, 50, 50);
+        btn.frame = CGRectMake((40 + (i * 90)), 25, 50, 50);
         [btn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@",imageArr[i]]] forState:UIControlStateNormal];
         btn.tag = i;
         [btn addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];

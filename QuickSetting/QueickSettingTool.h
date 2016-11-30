@@ -24,7 +24,7 @@
 + (void)configSnowEmitterLayerWithdefuetView:(UIView*)defuetView;
 
 /*
- @prarm 雪花方法
+ @prarm 重力方法
  @prarm effectImageView 传入要显示的图片
  @prarm baseView        如果有传入要最底层的界面没有传入nil
  */
