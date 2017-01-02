@@ -20,7 +20,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //此app只使用有3dtouch的手机否者会引起崩溃
+    //此app只使用有3dtouch的手机否者会引起崩溃 而且支持width 窗口可以在窗口中添加近通知栏很方便
     
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
