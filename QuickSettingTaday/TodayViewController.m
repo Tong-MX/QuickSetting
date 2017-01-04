@@ -28,7 +28,7 @@
     NSArray *imageArr = @[@"无线网",@"蜂窝数据",@"电池",@"定位"];
     for (int i = 0; i < 4; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.frame = CGRectMake((40 + (i * 90)), 25, 50, 50);
+        btn.frame = CGRectMake([UIScreen mainScreen].bounds.size.width / 4 * i + 15, 25, 50, 50);
         [btn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@",imageArr[i]]] forState:UIControlStateNormal];
         btn.tag = i;
         [btn addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];

@@ -17,8 +17,10 @@
 		9233B4CA1DD1CD250048E2ED /* 无线网.png in Resources */ = {isa = PBXBuildFile; fileRef = 9233B4C81DD1CD250048E2ED /* 无线网.png */; };
 		9233B4CB1DD1CD250048E2ED /* 蜂窝数据.png in Resources */ = {isa = PBXBuildFile; fileRef = 9233B4C91DD1CD250048E2ED /* 蜂窝数据.png */; };
 		9240A7F71DD300D4003435E1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F80CE41DD052480042AE6F /* MobileCoreServices.framework */; };
-		9240A81C1DD45DDF003435E1 /* QueickSettingTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9240A81B1DD45DDF003435E1 /* QueickSettingTool.a */; };
-		9240A81D1DD45DDF003435E1 /* QueickSettingTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9240A81B1DD45DDF003435E1 /* QueickSettingTool.a */; };
+		924103A41E1C8F6E00516F62 /* QueickSettingTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 924103A31E1C8F6E00516F62 /* QueickSettingTool.a */; };
+		924103A51E1C8F6E00516F62 /* QueickSettingTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 924103A31E1C8F6E00516F62 /* QueickSettingTool.a */; };
+		924103A61E1C8F6E00516F62 /* QueickSettingTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 924103A31E1C8F6E00516F62 /* QueickSettingTool.a */; };
+		924103A71E1C8F6E00516F62 /* QueickSettingTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 924103A31E1C8F6E00516F62 /* QueickSettingTool.a */; };
 		92B5AE4E1DD1D89E00D7D016 /* DazFlake.png in Resources */ = {isa = PBXBuildFile; fileRef = 92B5AE4D1DD1D89E00D7D016 /* DazFlake.png */; };
 		92F80CB21DD04F4F0042AE6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F80CB11DD04F4F0042AE6F /* main.m */; };
 		92F80CB51DD04F4F0042AE6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F80CB41DD04F4F0042AE6F /* AppDelegate.m */; };
@@ -82,8 +84,8 @@
 		9233B4C21DD1C53E0048E2ED /* 定位.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位.png"; sourceTree = "<group>"; };
 		9233B4C81DD1CD250048E2ED /* 无线网.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "无线网.png"; sourceTree = "<group>"; };
 		9233B4C91DD1CD250048E2ED /* 蜂窝数据.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蜂窝数据.png"; sourceTree = "<group>"; };
-		9240A81B1DD45DDF003435E1 /* QueickSettingTool.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = QueickSettingTool.a; sourceTree = "<group>"; };
 		9240A81E1DD45DEA003435E1 /* QueickSettingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueickSettingTool.h; sourceTree = "<group>"; };
+		924103A31E1C8F6E00516F62 /* QueickSettingTool.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = QueickSettingTool.a; sourceTree = "<group>"; };
 		92B5AE4D1DD1D89E00D7D016 /* DazFlake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazFlake.png; sourceTree = "<group>"; };
 		92F80CAD1DD04F4F0042AE6F /* QuickSetting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSetting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F80CB11DD04F4F0042AE6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -113,8 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924103A71E1C8F6E00516F62 /* QueickSettingTool.a in Frameworks */,
 				9240A7F71DD300D4003435E1 /* MobileCoreServices.framework in Frameworks */,
-				9240A81D1DD45DDF003435E1 /* QueickSettingTool.a in Frameworks */,
 				9233B4A81DD1B8E40048E2ED /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,8 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924103A41E1C8F6E00516F62 /* QueickSettingTool.a in Frameworks */,
 				92F80CE71DD0524F0042AE6F /* CoreLocation.framework in Frameworks */,
-				9240A81C1DD45DDF003435E1 /* QueickSettingTool.a in Frameworks */,
 				92F80CE51DD052480042AE6F /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924103A51E1C8F6E00516F62 /* QueickSettingTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924103A61E1C8F6E00516F62 /* QueickSettingTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +180,7 @@
 				92F80D171DD0B6E20042AE6F /* QuickSetting.entitlements */,
 				92F80CE81DD054790042AE6F /* QuickHeader.h */,
 				9240A81E1DD45DEA003435E1 /* QueickSettingTool.h */,
-				9240A81B1DD45DDF003435E1 /* QueickSettingTool.a */,
+				924103A31E1C8F6E00516F62 /* QueickSettingTool.a */,
 			);
 			name = QueickTool;
 			sourceTree = "<group>";
@@ -694,6 +698,10 @@
 				DEVELOPMENT_TEAM = D563M8VDK4;
 				INFOPLIST_FILE = QuickSettingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuickSetting",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-21486783.QuickSettingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickSetting.app/QuickSetting";
@@ -707,6 +715,10 @@
 				DEVELOPMENT_TEAM = D563M8VDK4;
 				INFOPLIST_FILE = QuickSettingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuickSetting",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-21486783.QuickSettingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickSetting.app/QuickSetting";
@@ -719,6 +731,10 @@
 				DEVELOPMENT_TEAM = D563M8VDK4;
 				INFOPLIST_FILE = QuickSettingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuickSetting",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-21486783.QuickSettingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = QuickSetting;
@@ -731,6 +747,10 @@
 				DEVELOPMENT_TEAM = D563M8VDK4;
 				INFOPLIST_FILE = QuickSettingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuickSetting",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-21486783.QuickSettingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = QuickSetting;
